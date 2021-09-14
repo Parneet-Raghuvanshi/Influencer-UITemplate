@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".frag_filters"
+    android:background="@drawable/bg_filters">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/headingtext"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Find\nYou Crowd"
+            android:textSize="36sp"
+            android:textColor="@color/black"/>
+
+        <ScrollView
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/headingtext"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_marginLeft="20dp"
+                    android:id="@+id/heading_one"
+                    android:text="Games"
+                    android:textStyle="bold"
+                    android:textColor="@color/textcolor"
+                    android:textSize="24sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:clipToPadding="false"
+                    android:layout_marginTop="5dp"
+                    android:layout_below="@+id/heading_one"
+                    android:id="@+id/recyclerview_game"
+                    android:layout_width="match_parent"
+                    android:layout_height="185dp"/>
+
+                <TextView
+                    android:layout_marginLeft="20dp"
+                    android:layout_below="@+id/recyclerview_game"
+                    android:id="@+id/heading_two"
+                    android:text="Sports"
+                    android:textStyle="bold"
+                    android:textColor="@color/textcolor"
+                    android:textSize="24sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:clipToPadding="false"
+                    android:layout_marginTop="5dp"
+                    android:layout_below="@+id/heading_two"
+                    android:id="@+id/recyclerview_sports"
+                    android:layout_width="match_parent"
+                    android:layout_height="185dp"/>
+
+                <TextView
+                    android:layout_marginLeft="20dp"
+                    android:layout_below="@+id/recyclerview_sports"
+                    android:id="@+id/heading_three"
+                    android:text="Locations"
+                    android:textStyle="bold"
+                    android:textColor="@color/textcolor"
+                    android:textSize="24sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:clipToPadding="false"
+                    android:layout_marginTop="5dp"
+                    android:layout_below="@+id/heading_three"
+                    android:id="@+id/recyclerview_nearbylocations"
+                    android:layout_width="match_parent"
+                    android:layout_height="185dp"/>
+
+                <TextView
+                    android:layout_marginLeft="20dp"
+                    android:layout_below="@+id/recyclerview_nearbylocations"
+                    android:id="@+id/heading_four"
+                    android:text="Programming"
+                    android:textStyle="bold"
+                    android:textColor="@color/textcolor"
+                    android:textSize="24sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:clipToPadding="false"
+                    android:layout_marginTop="5dp"
+                    android:layout_below="@+id/heading_four"
+                    android:id="@+id/recyclerview_programming"
+                    android:layout_width="match_parent"
+                    android:layout_height="185dp"/>
+
+                <TextView
+                    android:layout_marginLeft="20dp"
+                    android:layout_below="@+id/recyclerview_programming"
+                    android:id="@+id/heading_five"
+                    android:text="Entertainment"
+                    android:textStyle="bold"
+                    android:textColor="@color/textcolor"
+                    android:textSize="24sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:clipToPadding="false"
+                    android:layout_marginTop="5dp"
+                    android:layout_below="@+id/heading_five"
+                    android:id="@+id/recyclerview_entertainment"
+                    android:layout_width="match_parent"
+                    android:layout_height="185dp"/>
+
+            </RelativeLayout>
+
+        </ScrollView>
+
+    </RelativeLayout>
+
+</FrameLayout>
