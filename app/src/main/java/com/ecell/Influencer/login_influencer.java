@@ -20,6 +20,8 @@ public class login_influencer extends AppCompatActivity {
         getWindow().setFlags( WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_login_influencer);
 
+
+        //Simple login with button and zero credentials
         imageView = findViewById(R.id.imageView3);
 
         imageView.setOnClickListener(new View.OnClickListener() {

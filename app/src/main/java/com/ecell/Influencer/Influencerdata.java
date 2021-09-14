@@ -1,6 +1,7 @@
 package com.ecell.Influencer;
 
 public class Influencerdata {
+    //Very Simple Data Model for Template
     private String name;
     private String channel_name;
     private String platform;
